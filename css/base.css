@@ -36,11 +36,12 @@ header{
     position: fixed;
     width: 100%;
     z-index: 1000;
+    font-size: 50px;
 
 }
 h1 {
     color: white;
-    font-size: 50px;
+    font-size: 100px;
 }
 
 .sub-titulo {
