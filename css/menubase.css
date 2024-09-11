@@ -72,17 +72,6 @@ h1 {
   transition: 1s ease-in-out;
 }
 
-/* svg {
-  position: absolute;
-  left: 0;
-  top: 0;
-  fill: none;
-  stroke: #ffffff;
-  stroke-dasharray: 150 480;
-  stroke-dashoffset: 150;
-  transition: 1s ease-in-out;
-} */
-
 .btn:hover {
   transition: 1s ease-in-out;
   background: #025094
