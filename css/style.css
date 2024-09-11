@@ -29,6 +29,14 @@
 .conteudo .menu{
     padding: 50px;
 }
+.conteudo .menu img{
+  position: absolute;
+  height: 370px;
+  margin-top: -350px;
+  margin-left: 250px;
+  z-index: -1;
+
+}
 
 .menu{
     display: flex;
@@ -46,8 +54,8 @@ h1 {
 .container {
     position: static;
     width: 250px;
-    margin-left: 100px;
-    margin-top: 300px;
+    margin-left: 170px;
+    margin-top: 270px;
     transform: translate(-50%, -50%);
   }
   
@@ -87,13 +95,17 @@ h1 {
   }
   hr{
     width: 400px;
+    height: 4px;
+    color: white;
+    background-color: white;
+    
   }
 
-  .menu .mapa{
+  /* .menu .mapa{
     max-width: 100px;
     flex: 1;
     background-image: url("/image/mapa.png");
     background-size: cover;
     background-position: center;
 
-}
+} */
