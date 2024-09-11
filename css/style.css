@@ -93,13 +93,29 @@ h1 {
     font-weight: 200;
     
   }
-  hr{
+
+  .linha1{
+    width: 600px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 20px;
+  }
+  .linha2{
+    position: absolute;
+    width: 400px;
+    height: 4px;
+    background-color: #fff;
+    margin-top: 550px;
+    border-radius: 20px;
+  }
+
+  /* hr{
     width: 400px;
     height: 4px;
     color: white;
     background-color: white;
     
-  }
+  } */
 
   /* .menu .mapa{
     max-width: 100px;
