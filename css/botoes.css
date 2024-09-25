@@ -1,99 +1,99 @@
 * {
-    font-family: Cormorant Upright;
-  }
-  .container {
-    position: static;
-    margin-left: 720px;
-    margin-top: -620px;
-    width: 0px;
-    height: 0px;
-    text-align: center;
-    flex-direction: row;
-   
-  }
-  .container2 {
-    position: static;
-    margin-left: 110px;
-    margin-top: -620px;
-    height: 0px;
-    text-align: center;
-    flex-direction: row;
-   
-  }
-  button {
-    outline:none;
-    height: 40px;
-    text-align: center;
-    width: 130px;
-    border-radius:40px;
-    background: #D9D9D9;
-    border: 2px solid #023E73;
+  font-family: Cormorant Upright;
+}
+.container {
+  position: static;
+  margin-left: 720px;
+  margin-top: -620px;
+  width: 0px;
+  height: 0px;
+  text-align: center;
+  flex-direction: row;
+ 
+}
+.container2 {
+  position: static;
+  margin-left: 110px;
+  margin-top: -620px;
+  height: 0px;
+  text-align: center;
+  flex-direction: row;
+ 
+}
+button {
+  outline:none;
+  height: 40px;
+  text-align: center;
+  width: 130px;
+  border-radius:40px;
+  background: #D9D9D9;
+  border: 2px solid #023E73;
+  color:rgb(0, 0, 0);
+  letter-spacing:1px;
+  text-shadow:0;
+  font-size:18px;
+  font-weight:bold;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  &:hover {
     color:rgb(0, 0, 0);
-    letter-spacing:1px;
-    text-shadow:0;
-    font-size:18px;
-    font-weight:bold;
-    cursor: pointer;
-    transition: all 0.25s ease;
-    &:hover {
-      color:rgb(0, 0, 0);
-      background: #dbcfcf;
-    }
-    &:active {
-      letter-spacing: 2px;
-      letter-spacing: 2px ;
-    }
-    header nav{
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      gap: 2rem;
-      padding: 2rem;
+    background: #dbcfcf;
   }
-  
-    header nav a{
-      display: flex;
-      justify-content: flex-end;
-      font-size: 1.4rem;
-      text-decoration: none;
-      color: var(--primary);
+  &:active {
+    letter-spacing: 2px;
+    letter-spacing: 2px ;
   }
-  header nav.opened{
+  header nav{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+  header nav a{
     display: flex;
+    justify-content: flex-end;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: var(--primary);
+}
+header nav.opened{
+  display: flex;
+}
+
+}
+.onclic {
+  width: 40px;
+  border-color:gray;
+  border-width:3px;
+  font-size:0;
+  border-left-color: green;
+  animation: rotating 2s 0.25s linear infinite;
+
+  &:after {
+    content:"";
   }
-  
+  &:hover {
+    color:green;
+    background: white;
   }
-  .onclic {
-    width: 40px;
-    border-color:gray;
-    border-width:3px;
-    font-size:0;
-    border-left-color: green;
-    animation: rotating 2s 0.25s linear infinite;
-  
-    &:after {
-      content:"";
-    }
-    &:hover {
-      color:green;
-      background: white;
-    }
+}
+.validate {
+  font-size:13px;
+  color: white;
+  background: green;
+  &:after {
+    font-family:'FontAwesome';
+    content:"\f00c";
   }
-  .validate {
-    font-size:13px;
-    color: white;
-    background: green;
-    &:after {
-      font-family:'FontAwesome';
-      content:"\f00c";
-    }
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
   }
-  
-  @keyframes rotating {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+  to {
+    transform: rotate(360deg);
   }
+}

@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caramel&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 3% 94% 3%;
+}
+
+.div1{
+    background-image: url("/image/borda.jpg");
+    height: 100vh;
+}
+
+.div2{
+    background-color:#023E73;
+    height: 100vh;
+}
+
+.div3{
+    background-image: url("/image/borda.jpg");
+    height: 100vh;
+}
+
+.div2 h1{
+    color: #c29c3f;
+    font-family: 'Caesar Dressing';
+    font-size: 75px;
+    margin-top: 20px;
+}
+
+.div2.title div{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+}
+
+.div2.title div span{
+    margin: 20px;
+    margin-top: 65px;
+}
+
+.div2 span{
+    width: 400px;
+    height: 4px;
+    background-color: #fff;
+}
+.div2.title a{
+    margin: 800px;
+    margin-top: 65px;
+    color: #c29c3f;
+    font-family: 'Caramel';
+    font-size: 75px;
+    text-align: center;
+
+}
+
+
+
+
+@media(width<600px){
+    .div1{
+        width:200px;
+        height: 50vh;
+    }
+}
