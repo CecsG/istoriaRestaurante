@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #002f6c;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 35%;
+    background-color: #003366;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-collage {
+    position: relative;
+}
+
+.collage-image {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.window-icon {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    width: 50px;
+    height: auto;
+}
+
+.form-section {
+    width: 65%;
+    padding: 50px;
+    background-color: #003366;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.logo img {
+    width: 70px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+}
+
+form input {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #336699;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #285c91;
+}
+
+.login-section {
+    margin-top: 30px;
+    font-size: 1rem;
+}
+
+.login-section a {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+.login-section a:hover {
+    text-decoration: underline;
+}

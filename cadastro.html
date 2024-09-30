@@ -1,12 +1,35 @@
-<!DOCTYPE html>
-<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastre-se</title>
-    <link rel="shortcut icon" type="image/png" href="./image/logo1.png">
+    <title>Página de Cadastro</title>
+    <link rel="stylesheet" href="css/cadastro.css">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="sidebar">
+            <div class="image-collage">
+                <img src="image/cadastro.png" class="collage-image" alt="Imagem 1">
+               
+                <img src="window-icon.png" class="window-icon" alt="Janela">
+            </div>
+        </div>
+
+        <div class="form-section">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <h1>CADASTRO</h1>
+            <form>
+                <input type="text" placeholder="Nome" required>
+                <input type="tel" placeholder="Telefone" required>
+                <input type="email" placeholder="E-mail" required>
+                <input type="password" placeholder="Senha" required>
+                <button type="submit">Cadastrar</button>
+            </form>
+            <div class="login-section">
+                <span>Já tem cadastro? <a href="#">Faça login</a></span>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
