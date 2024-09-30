@@ -1,6 +1,7 @@
 .div2{
     text-align: center;
-    color: var(--primary);
+    color: #fff
+    ;
     padding: 0 2rem;
 }
 .div2 .title{
@@ -43,7 +44,7 @@
     align-items: center;
     position: absolute;
     inset: 0 0 0 0;
-    background-color: var(--primary);
+    background-color: ;
     color: var(--primary-foreground);
     padding: 2rem;
     font-size: 1.9rem;
