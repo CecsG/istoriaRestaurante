@@ -59,6 +59,7 @@ header div.--inicio h1{/* TITULO */
     font-style: normal;
     font-size: 90px;
     color: #C29C3F;
+    text-decoration: none;
 }
 
 
@@ -71,6 +72,7 @@ header h2.subtitulo{/* SUBTITULO */
   font-style: normal;
   color: #C29C3F;
   font-size: 80px;
+  text-decoration: none;
 
 }
 
@@ -84,7 +86,7 @@ header div.card-position{/* SEPARAÇÃO DOS CARDS */
 
 header div.card{/* AQUI PODE AJUSTAR O TAMANHO DOS CARDS */
     background-color: #A37B58;
-    width: 619px;
+    width: 750px;
     height: 169px;
     border-radius: 10px;
     display: flex;
@@ -112,20 +114,20 @@ div.--text{/* POSIÇÃO ENTRE O TITULO E A DESCRIÇÃO*/
 }
 p.titulo{/*TITULO DO PRODUTO*/
     font-family: "Cinzel Decorative", serif;
-font-weight: 400;
-font-style: normal;
-font-size: 20px; 
-color: white;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px; 
+    color: white;
 }
 
 div.--text p.subtitulo{ /*DESCRIÇÃO DO PRODUTO*/
-    width: 19rem;
+    width: 29rem;
     height: 6.5rem;
-font-size: 15px; 
-font-family: "Bona Nova", serif;
-font-weight: 400;
-font-style: normal;
-color: white;
+    font-size: 20px; 
+    font-family: "Bona Nova", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
 
 }
 
@@ -157,5 +159,6 @@ div button.btn{/*BOTÃO DO CARD*/
     font-family: "Bona Nova", serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 15px;
 
 }
