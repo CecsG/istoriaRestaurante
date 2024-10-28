@@ -174,7 +174,7 @@ a{
         display:flex;
         flex-direction: row;
     }
-    .lateral{
+  .row  .lateral{
         display: none;
     }
     div.card-position{/* SEPARAÇÃO DOS CARDS */
