@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #023e73;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-collage {
+    position: absolute;
+}
+
+.collage-image {
+    width: 700px;
+    height: relative;
+    margin-left: 300px;
+}
+
+.window-icon {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    width: 50px;
+    height: auto;
+}
+
+.form-section {
+    width: 65%;
+    padding: 50px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    position: relative;
+    top: -150px;
+    left: 0px;
+}
+
+.logo img {
+    width: 350px;
+}
+
+h1 {
+    margin-top: -180px;
+    font-size: 5rem;
+    margin-bottom: 20px;
+    font-family: 'Cormorant Garamond';
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+}
+
+form input {
+    margin: 10px ;
+    padding: 10px;
+    font-size: 1rem;
+    border: solid ;
+    border-width: 2px;
+    border-radius: 1vh;
+    border-color: #c18f32;
+    background-color: #f0f0f000;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #336699;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #285c91;
+}
+
+.login-section {
+    margin-top: 30px;
+    font-size: 1rem;
+}
+
+.login-section a {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+.login-section a:hover {
+    text-decoration: underline;
+}
