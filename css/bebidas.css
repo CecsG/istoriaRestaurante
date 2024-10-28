@@ -293,7 +293,7 @@ a{
     }
     div.card{/* AQUI PODE AJUSTAR O TAMANHO DOS CARDS */
         background-color: #A37B58;
-        width: 280px;
+        width: 286px;
         height: 169px;
         border-radius: 10px;
         display: flex;
@@ -325,7 +325,7 @@ a{
     }
     p.titulo{/*TITULO DO PRODUTO*/
         width: 15rem;
-        margin-left: 5.2rem;
+        margin-left: 4.6rem;
         margin-top: -4rem;
         font-size: 20px; 
         color: white;

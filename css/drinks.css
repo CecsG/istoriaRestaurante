@@ -328,7 +328,7 @@ a{
     }
     p.titulo{/*TITULO DO PRODUTO*/
         width: 15rem;
-        margin-left: 5.2rem;
+        margin-left: 4.6rem;
         margin-top: -4rem;
         font-size: 20px; 
         color: white;
@@ -362,6 +362,7 @@ a{
         border-radius: 10px;
         font-size: 12px;
     }
+   
     header div.--inicio{/* lINHAS E O TITULO */
         display: flex;
         justify-content: space-between;
