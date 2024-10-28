@@ -215,10 +215,10 @@ a{
         margin: 1px 5px;
     }
     p.titulo{/*TITULO DO PRODUTO*/
-        width: 25rem;
-        margin-left: 1.2rem;
+        width: 24rem;
+        margin-left: -0.2rem;
         margin-top: 1rem;
-        font-size: 21px; 
+        font-size: 19px; 
         color: white;
     }
     
@@ -237,18 +237,21 @@ a{
     }
     div.--preco-button p{ /*PREÇO DO PRODUTO*/
         position: absolute;
-        margin-left: -32.7rem;
+        margin-left: -30.3rem;
         font-size: 18px;
         margin-top: 7.8rem;
     }
     div button.btn{/*BOTÃO DO CARD*/
         margin-top: 7.8rem;
-        margin-left: -20.2rem;
+        margin-left: -18.2rem;
         position: absolute;
         width: 120px;
         height: 23px;
         border-radius: 10px;
         font-size: 14px;
+    }
+    header{
+        width: 100%;
     }
     header div.--inicio{/* lINHAS E O TITULO */
         display: flex;
