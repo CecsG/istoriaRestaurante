@@ -115,19 +115,6 @@ div.menu h1 {
     text-decoration: none;
   }
 
-  /* hr{
-    width: 400px;
-    height: 4px;
-    color: white;
-    background-color: white;
+  @media(max-width:768){
     
-  } */
-
-  /* .menu .mapa{
-    max-width: 100px;
-    flex: 1;
-    background-image: url("/image/mapa.png");
-    background-size: cover;
-    background-position: center;
-
-} */
+  }

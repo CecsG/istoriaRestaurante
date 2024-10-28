@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+html{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+body{
+    width: 100%; /* LARGURA */
+    height: 100%; /* ALTURA */
+    background-color: #023E73;
+    object-fit: cover;/* FAZ COM QUE O VIDEO CUBRA TODA A TELA  */
+    
+}
+
+
+.row{/* IMAGEM DAS LATERAL */
+    display: flex;
+    flex-direction: row;
+    height: 100vh; /* TELA TODA - ALTURA */
+    width: 100%; /* TELA TODA - LARGURA */
+    object-fit: cover;
+    justify-content: space-between;
+}
+.row img{
+    width: 45px;
+    height: 100%;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button:hover {
+    background: #555;
+}
+
+.total {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: right;
+}
+ div.--inicio{/* lINHAS E O TITULO */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+div.container h1{/* TITULO */
+    font-family: "Caesar Dressing", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 90px;
+    color: #C29C3F;
+    text-decoration: none;
+}
+
+ div.container div.linha-inicio{/* lINHAS LATERAIS DO TITULO */
+    width: 440px;
+    height: 3px;
+    background-color: #ffffff;
+}
