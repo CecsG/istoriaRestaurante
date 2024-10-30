@@ -116,5 +116,56 @@ div.menu h1 {
   }
 
   @media(max-width:768px){
-    
+  .conteudo .imagem{
+    max-width: 700px;
+    flex: 1;
+    background-image: url("/image/porta.png");
+    background-size: cover;
+    background-position: center;
+
   }
+  .conteudo .menu img{
+    position: absolute;
+    height: 270px;
+    margin-top: -350px;
+    margin-left: 120px;
+    z-index: -1;
+  }
+  .menu{
+    width: 450px;
+  }
+  .linha1{
+    width: 400px;
+   
+  }
+  .linha2{
+    width: 270px;
+  }
+  }
+  @media(max-width:428px){
+    .conteudo .imagem{
+      max-width: 700px;
+      flex: 1;
+      background-image: url("/image/porta.png");
+      background-size: cover;
+      background-position: center;
+  
+    }
+    .conteudo .menu img{
+      position: absolute;
+      height: 270px;
+      margin-top: -350px;
+      margin-left: 120px;
+      z-index: -1;
+    }
+    .menu{
+      width: 450px;
+    }
+    .linha1{
+      width: 400px;
+     
+    }
+    .linha2{
+      width: 270px;
+    }
+    }
