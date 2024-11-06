@@ -23,6 +23,19 @@
                 <div class="card">
                     <img src="image/comidas/almoco/moussaka.png" alt="">
                     <div class="--linha">
+                        <div class="--text">
+                            <p class="titulo">MOUSSAKA</p>
+                            <p class="subtitulo">Camadas de abobrinha, berinjela e ( parmesão ou queijo de búfala). Servida gratinada com parmesão e molho.</p>
+                        </div>
+                        <div class="--preco-button">
+                            <p class="titulo">R$ 59,90</p>
+                            <button class="btn" onclick="adicionarAoCarrinho('MOUSSAKA', 59.90)">Adicionar a sacola</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="card">
+                    <img src="image/comidas/almoco/moussaka.png" alt="">
+                    <div class="--linha">
                     <div class="--text">
                         <p class="titulo">MOUSSAKA</p>
                         <p class="subtitulo"> Camadas de abobrinha, berinjela e ( parmesão ou queijo de búfala). Servida gratinada com parmesão e molho. </p>
@@ -32,7 +45,7 @@
                         <button class="btn">Adicionar a sacola</button>
                     </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="card">
                     <img src="image/comidas/almoco/polvo.png" alt="">
                     <div class="--linha">
@@ -42,7 +55,7 @@
                     </div>
                     <div class="--preco-button">
                         <p class="titulo">R$ 159,90</p>
-                        <button class="btn">Adicionar a sacola</button>
+                        <button class="btn" onclick="adicionarAoCarrinho('POLVO GREGO', 159.90)">Adicionar a sacola</button>
                     </div>
                     </div>
                 </div>
@@ -55,15 +68,15 @@
                     <img src="image/comidas/almoco/cordeiro.png" alt="">
 
                     <div class="--linha">
-                    <div class="--text">
-                        <p class="titulo">CORDEIRO ASSADO</p>
-                        <p class="subtitulo"> Costeleta de cordeiro grelhada com especiarias gregas e raspas de limão. Servida com batata frita.</p>
+                        <div class="--text">
+                            <p class="titulo">CORDEIRO ASSADO</p>
+                            <p class="subtitulo"> Costeleta de cordeiro grelhada com especiarias gregas e raspas de limão. Servida com batata frita.</p>
+                        </div>
+                        <div class="--preco-button">
+                            <p class="titulo">R$ 79,90</p>
+                            <button class="btn">Adicionar a sacola</button>
+                        </div>
                     </div>
-                    <div class="--preco-button">
-                        <p class="titulo">R$ 79,90</p>
-                        <button class="btn">Adicionar a sacola</button>
-                    </div>
-                </div>
                 </div>
                 <div class="card">
                     <img src="image/comidas/almoco/risoto.png" alt="">
@@ -114,4 +127,19 @@
         <img class=lateral src="image/borda.png" alt="">
     </div> 
 </body>
+<script>
+    function adicionarAoCarrinho(nome, preco) {
+        let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+        let itemExistente = carrinho.find(item => item.nome === nome);
+        
+        if (itemExistente) {
+            itemExistente.quantidade += 1;
+        } else {
+            carrinho.push({ nome, preco, quantidade: 1 });
+        }
+        
+        localStorage.setItem('carrinho', JSON.stringify(carrinho));
+        alert(`${nome} foi adicionado ao carrinho!`);
+    }
+    </script>
 </html>
