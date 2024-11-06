@@ -30,6 +30,7 @@
                     <div class="--preco-button">
                         <p class="titulo">R$ 20,90</p>
                         <button class="btn">Adicionar a sacola</button>
+                        <button class="btn" onclick="adicionarAoCarrinho('BAKLAVA, 20.90)">Adicionar a sacola</button>
                     </div>
                     </div>
                 </div>
@@ -43,6 +44,7 @@
                     <div class="--preco-button">
                         <p class="titulo">R$ 25,90</p>
                         <button class="btn">Adicionar a sacola</button>
+                        <button class="btn" onclick="adicionarAoCarrinho('MILOPITA', 25.90)">Adicionar a sacola</button>
                     </div>
                     </div>
                 </div>
@@ -62,6 +64,7 @@
                     <div class="--preco-button">
                         <p class="titulo">R$ 15,90</p>
                         <button class="btn">Adicionar a sacola</button>
+                        <button class="btn" onclick="adicionarAoCarrinho('BROWNIE PALMIRA', 15.90)">Adicionar a sacola</button>
                     </div>
                 </div>
                 </div>
@@ -75,6 +78,7 @@
                     <div class="--preco-button">
                         <p class="titulo">R$ 30,90</p>
                         <button class="btn">Adicionar a sacola</button>
+                        <button class="btn" onclick="adicionarAoCarrinho('BOUGATSA CRETA', 30.90)">Adicionar a sacola</button>
                     </div>
                     </div>
                 </div>
@@ -89,8 +93,9 @@
                         <p class="subtitulo"> É uma torta de leite com açúcar, canela e raspas de limão</p>
                     </div>
                     <div class="--preco-button">
-                        <p class="titulo">R$ 20,90</p>
+                        <p class="titulo">R$ 22,90</p>
                         <button class="btn">Adicionar a sacola</button>
+                        <button class="btn" onclick="adicionarAoCarrinho('GALOTOPITA, 22.90)">Adicionar a sacola</button>
                     </div>
                     </div>
                 </div>
@@ -105,6 +110,7 @@
                     <div class="--preco-button">
                         <p class="titulo">R$ 39,90</p>
                         <button class="btn">Adicionar a sacola</button>
+                        <button class="btn" onclick="adicionarAoCarrinho('TAÇA ESPARTA', 39.90)">Adicionar a sacola</button>
                     </div>
                     </div>
                 </div>
@@ -114,4 +120,20 @@
         <img class=lateral src="image/borda.png" alt="">
     </div>
 </body>
+
+<script>
+    function adicionarAoCarrinho(nome, preco) {
+        let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+        let itemExistente = carrinho.find(item => item.nome === nome);
+        
+        if (itemExistente) {
+            itemExistente.quantidade += 1;
+        } else {
+            carrinho.push({ nome, preco, quantidade: 1 });
+        }
+        
+        localStorage.setItem('carrinho', JSON.stringify(carrinho));
+        alert(`${nome} foi adicionado ao carrinho!`);
+    }
+    </script>
 </html>

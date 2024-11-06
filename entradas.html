@@ -30,6 +30,7 @@
                     <div class="--preco-button">
                         <p class="titulo">R$ 42,90</p>
                         <a href="teste.html"><button class="btn">Adicionar a sacola </button></a>
+                        <button class="btn" onclick="adicionarAoCarrinho('CHEESE', 42.90)">Adicionar a sacola</button>
                     </div>
                     </div>
                 </div>
@@ -44,6 +45,7 @@
                     <div class="--preco-button">
                         <p class="titulo">R$ 59,90</p>
                         <button class="btn">Adicionar a sacola</button>
+                        <button class="btn" onclick="adicionarAoCarrinho('CEVICHE CORFU', 59.90)">Adicionar a sacola</button>
                     </div>
                     </div>
                 </div>
@@ -62,8 +64,9 @@
                             Acompanha molho tzatziki.</p>
                     </div>
                     <div class="--preco-button">
-                        <p class="titulo">R$ 59,90</p>
+                        <p class="titulo">R$ 60,90</p>
                         <button class="btn">Adicionar a sacola</button>
+                        <button class="btn" onclick="adicionarAoCarrinho('BOLINHO HÉLADE', 60.90)">Adicionar a sacola</button>
                     </div>
                 </div>
                 </div>
@@ -75,8 +78,9 @@
                         <p class="subtitulo"> Dadinho de tapioca granulada, queijo feta, e perfume de oregano servidos com molho de mel apimentado.</p>
                     </div>
                     <div class="--preco-button">
-                        <p class="titulo">R$ 42,90</p>
+                        <p class="titulo">R$ 45,90</p>
                         <button class="btn">Adicionar a sacola</button>
+                        <button class="btn" onclick="adicionarAoCarrinho('DADINHO', 45.90)">Adicionar a sacola</button>
                     </div>
                     </div>
                 </div>
@@ -94,6 +98,7 @@
                     <div class="--preco-button">
                         <p class="titulo">R$ 64,90</p>
                         <button class="btn">Adicionar a sacola</button>
+                        <button class="btn" onclick="adicionarAoCarrinho('ANÉIS ESPARTA', 64.90)">Adicionar a sacola</button>
                     </div>
                     </div>
                 </div>
@@ -106,8 +111,9 @@
                         <p class="subtitulo"> Camarões findado na manteiga, azeite, ervas gregas, finalizados com tomate cereja e raspas de limão siciliano.</p>
                     </div>
                     <div class="--preco-button">
-                        <p class="titulo">R$ 79,90</p>
+                        <p class="titulo">R$ 80,90</p>
                         <button class="btn">Adicionar a sacola</button>
+                        <button class="btn" onclick="adicionarAoCarrinho('CAMARÕES CALAMATA', 80.90)">Adicionar a sacola</button>
                     </div>
                     </div>
                 </div>
@@ -117,4 +123,20 @@
         <img class=lateral src="image/borda.png" alt="">
     </div>
 </body>
+
+<script>
+    function adicionarAoCarrinho(nome, preco) {
+        let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+        let itemExistente = carrinho.find(item => item.nome === nome);
+        
+        if (itemExistente) {
+            itemExistente.quantidade += 1;
+        } else {
+            carrinho.push({ nome, preco, quantidade: 1 });
+        }
+        
+        localStorage.setItem('carrinho', JSON.stringify(carrinho));
+        alert(`${nome} foi adicionado ao carrinho!`);
+    }
+    </script>
 </html>

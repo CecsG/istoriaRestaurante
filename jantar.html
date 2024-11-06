@@ -30,6 +30,7 @@
                     <div class="--preco-button">
                         <p class="titulo">R$ 60,90</p>
                         <button class="btn">Adicionar a sacola</button>
+                        <button class="btn" onclick="adicionarAoCarrinho('MASSA RODES', 60.90)">Adicionar a sacola</button>
                     </div>
                     </div>
                 </div>
@@ -43,6 +44,7 @@
                     <div class="--preco-button">
                         <p class="titulo">R$ 100,90</p>
                         <button class="btn">Adicionar a sacola</button>
+                        <button class="btn" onclick="adicionarAoCarrinho('GYROS MILETO', 100.90)">Adicionar a sacola</button>
                     </div>
                     </div>
                 </div>
@@ -60,8 +62,9 @@
                         <p class="subtitulo">São folhas de uva recheadas com uma mistura saborosa de arroz, ervas e, às vezes, carne. </p>
                     </div>
                     <div class="--preco-button">
-                        <p class="titulo">R$ 79,90</p>
+                        <p class="titulo">R$ 85,90</p>
                         <button class="btn">Adicionar a sacola</button>
+                        <button class="btn" onclick="adicionarAoCarrinho('DOLMADES', 85.90)">Adicionar a sacola</button>
                     </div>
                 </div>
                 </div>
@@ -75,6 +78,7 @@
                     <div class="--preco-button">
                         <p class="titulo">R$ 71,90</p>
                         <button class="btn">Adicionar a sacola</button>
+                        <button class="btn" onclick="adicionarAoCarrinho('PASTITSIO', 71.90)">Adicionar a sacola</button>
                     </div>
                     </div>
                 </div>
@@ -91,6 +95,7 @@
                     <div class="--preco-button">
                         <p class="titulo">R$ 49,90</p>
                         <button class="btn">Adicionar a sacola</button>
+                        <button class="btn" onclick="adicionarAoCarrinho('TZATZIKI', 49.90)">Adicionar a sacola</button>
                     </div>
                     </div>
                 </div>
@@ -103,8 +108,9 @@
                         <p class="subtitulo">É feito com Lula frita, pimenta do reino, oregano, cebolinha e limão</p>
                     </div>
                     <div class="--preco-button">
-                        <p class="titulo">R$ 50,90</p>
+                        <p class="titulo">R$ 55,90</p>
                         <button class="btn">Adicionar a sacola</button>
+                        <button class="btn" onclick="adicionarAoCarrinho('LULA FRITA', 55.90)">Adicionar a sacola</button>
                     </div>
                     </div>
                 </div>
@@ -114,4 +120,19 @@
         <img class=lateral src="image/borda.png" alt="">
     </div>
 </body>
+<script>
+    function adicionarAoCarrinho(nome, preco) {
+        let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+        let itemExistente = carrinho.find(item => item.nome === nome);
+        
+        if (itemExistente) {
+            itemExistente.quantidade += 1;
+        } else {
+            carrinho.push({ nome, preco, quantidade: 1 });
+        }
+        
+        localStorage.setItem('carrinho', JSON.stringify(carrinho));
+        alert(`${nome} foi adicionado ao carrinho!`);
+    }
+    </script>
 </html>
