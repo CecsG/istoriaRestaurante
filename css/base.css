@@ -91,6 +91,17 @@ header nav.opened{
 .menu{
    text-decoration: none; 
 }
+.sobre {
+    width: 190px;
+    height: 254px;
+    border-radius: 30px;
+    background: #e0e0e0;
+    box-shadow: 15px 15px 30px #bebebe,
+               -15px -15px 30px #ffffff;
+    display: flex;
+    position: absolute;
+    margin-top: 980px;
+  }
 
 
 
