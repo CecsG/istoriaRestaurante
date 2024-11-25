@@ -19,7 +19,27 @@ body{
     object-fit: cover;/* FAZ COM QUE O VIDEO CUBRA TODA A TELA  */
     
 }
+header div.--inicio{/* lINHAS E O TITULO */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+}
 
+header div.--inicio div.linha-inicio{/* lINHAS LATERAIS DO TITULO */
+    width: 440px;
+    height: 3px;
+    background-color: #ffffff;
+}
+header div.--inicio h1{/* TITULO */
+    font-family: "Caesar Dressing", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 90px;
+    color: #C29C3F;
+    text-decoration: none;
+}
 
 .row{/* IMAGEM DAS LATERAL */
     display: flex;
@@ -93,6 +113,14 @@ div.container h1{/* TITULO */
     width: 440px;
     height: 3px;
     background-color: #ffffff;
+    header div.--inicio h1{/* TITULO */
+    font-family: "Caesar Dressing", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 90px;
+    color: #C29C3F;
+    text-decoration: none;
+    }
 }
 @media(max-width:768px){
     .row{
