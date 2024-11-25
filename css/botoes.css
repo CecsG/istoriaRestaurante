@@ -1,3 +1,5 @@
+
+
 * {
   font-family: Cormorant Upright;
 }
@@ -37,7 +39,7 @@ button {
   transition: all 0.25s ease;
   &:hover {
     color:rgb(0, 0, 0);
-    background: #dbcfcf;
+  
   }
   &:active {
     letter-spacing: 2px;
