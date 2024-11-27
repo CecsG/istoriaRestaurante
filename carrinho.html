@@ -16,62 +16,66 @@
                 <div class="linha-inicio"></div>
                 <a href="cardapio1.html"><h1>Carrinho</h1></a>
                 <div class="linha-inicio"></div>
-            </div>
-        <div class="maior">
-            <div class="media">
-                <div class="produtos">
-                    <img src="image/comidas/almoco/cordeiro.png" alt="">
-                    <div class="quantidade">
-                        <p class="menos">-</p>
-                            1
-                        <p class="mais">+</p>
-                    </div>
-                    <p class="descricao">Cheese Santorini </p>
-                    <p class="preco">R$ 41,00 </p>
-                </div>
-                <div class="produtos">
-                    <img src="image/comidas/almoco/cordeiro.png" alt="">
-                    <div class="quantidade">
-                        <p class="menos">-</p>
-                            1
-                        <p class="mais">+</p>
-                    </div>
-                    <p class="descricao">Cheese Santorini </p>
-                    <p class="preco">R$ 41,00 </p>
-                </div>
-                <div class="produtos">
-                    <img src="image/comidas/almoco/cordeiro.png" alt="">
-                    <div class="quantidade">
-                        <p class="menos">-</p>
-                            1
-                        <p class="mais">+</p>
-                    </div>
-                    <p class="descricao">Cheese Santorini </p>
-                    <p class="preco">R$ 41,00 </p>
-                </div>
-                <div class="produtos">
-                    <img src="image/comidas/almoco/cordeiro.png" alt="">
-                    <div class="quantidade">
-                        <p class="menos">-</p>
-                            1
-                        <p class="mais">+</p>
-                    </div>
-                    <p class="descricao">Cheese Santorini </p>
-                    <p class="preco">R$ 41,00 </p>
-                </div>
-            </div>
 
-            <div class="pequena">
-
+            </div>
+       <div id="carrinho-produtos"></div>
+            
+            <div class="total">
+                <h2>Total Itens: R$ <span id="valorTotalCompra">0.00</span></h2>
             </div>
         </div>
-
-       
-
-          
-                 
-          
-        </header>
+   
+    <img src="image/borda.png" alt="">
+    </div>
+    <script src="js/script.js"></script>
+</body>
+<script>
+    function carregarCarrinho() {
+        let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+        let container = document.getElementById('carrinho-produtos');
+        let total = 0;
+    
+        container.innerHTML = '';
+    
+        carrinho.forEach((item, index) => {
+            total += item.preco * item.quantidade;
+    
+            container.innerHTML += `
+                <div class="product">
+                    <h2>${item.nome}</h2>
+                    <p>Preço: R$ <span>${item.preco.toFixed(2)}</span></p>
+                    <button onclick="adicionarItem(${index})">+</button>
+                    <p><span id="quantidade${index}">${item.quantidade}</span></p>
+                    <button onclick="removerItem(${index})">-</button>
+                    <p>Total: R$ <span id="total${index}">${(item.preco * item.quantidade).toFixed(2)}</span></p>
+                </div>
+            `;
+        });
+    
+        document.getElementById('valorTotalCompra').innerText = total.toFixed(2);
+    }
+    
+    function adicionarItem(index) {
+        let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+        carrinho[index].quantidade += 1;
+        localStorage.setItem('carrinho', JSON.stringify(carrinho));
+        carregarCarrinho();
+    }
+    
+    function removerItem(index) {
+        let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+        if (carrinho[index].quantidade > 1) {
+            carrinho[index].quantidade -= 1;
+        } else {
+            carrinho.splice(index, 1);
+        }
+        localStorage.setItem('carrinho', JSON.stringify(carrinho));
+        carregarCarrinho();
+    }
+    
+    window.onload = carregarCarrinho;
+    </script>
+</html>
 
         <img src="image/borda.png" alt="">
     </div>
