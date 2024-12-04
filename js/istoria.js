@@ -1,11 +1,11 @@
 // cria os vetores para armazenar os dados do backend
 var almoco=[];
 var bebidas = [];
-var  = [];
-var precos_pratos = [];
-var fotos_pratos = [];
-var categorias_pratos = [];
-var promocoes_pratos = [];
+var carrinho = [];
+var clientes = [];
+var entradas = [];
+var jantar = [];
+var sobremesas = [];
 
 //cria o evento que será executado qdo carrega a pagina
 window.onload=()=>{
@@ -14,7 +14,7 @@ window.onload=()=>{
 //cria  a função pesquisa cardapio, que traz os dados do back
 function pesquisaCardapio(){
     //faz a requisição ao backend
-    fetch('http://localhost:8000/cardapio/')
+    fetch('http://localhost:8080/cardapio/')
     //transforma a resposta em json
     .then(response=>response.json())
     //manipula os dados retornados do backend
