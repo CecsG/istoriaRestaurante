@@ -41,103 +41,9 @@
                 <a href="cardapio1.html"><h1>APOLO</h1></a>
                 <div class="linha-inicio"></div>
             </div>
-            <h2 class="subtitulo">Almoço</h1>
-            <!--PRIMEIRA LINHA DE CARD-->
-
-            <div class="card-position">
-                <div class="card">
-                    <img src="image/comidas/almoco/moussaka.png" alt="">
-                    <div class="--linha">
-                        <div class="--text">
-                            <p class="titulo">MOUSSAKA</p>
-                            <p class="subtitulo">Camadas de abobrinha, berinjela e ( parmesão ou queijo de búfala). Servida gratinada com parmesão e molho.</p>
-                        </div>
-                        <div class="--preco-button">
-                            <p class="titulo">R$ 59,90</p>
-                            <button class="btn" onclick="adicionarAoCarrinho('MOUSSAKA', 59.90)">Adicionar a sacola</button>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="card">
-                    <img src="image/comidas/almoco/polvo.png" alt="">
-                    <div class="--linha">
-                    <div class="--text">
-                        <p class="titulo">POLVO GREGO</p>
-                        <p class="subtitulo"> Polvo grelhado com ervas e finalizado ao perfume de páprica. Servido com legumes assados e patê de azeitona </p>
-                    </div>
-                    <div class="--preco-button">
-                        <p class="titulo">R$ 159,90</p>
-                        <button class="btn" onclick="adicionarAoCarrinho('POLVO GREGO', 159.90)">Adicionar a sacola</button>
-                    </div>
-                    </div>
-                </div>
-
-            </div>
-
-             <!--SEGUNDA LINHA DE CARD-->
-            <div class="card-position">
-                <div class="card">
-                    <img src="image/comidas/almoco/cordeiro.png" alt="">
-
-                    <div class="--linha">
-                        <div class="--text">
-                            <p class="titulo">CORDEIRO ASSADO</p>
-                            <p class="subtitulo"> Costeleta de cordeiro grelhada com especiarias gregas e raspas de limão. Servida com batata frita.</p>
-                        </div>
-                        <div class="--preco-button">
-                            <p class="titulo">R$ 79,90</p>
-                            <button class="btn">Adicionar a sacola</button>
-                            <button class="btn" onclick="adicionarAoCarrinho('CORDEIRO ASSADO', 79.90)">Adicionar a sacola</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="image/comidas/almoco/risoto.png" alt="">
-                    <div class="--linha">
-                    <div class="--text">
-                        <p class="titulo">RISOTO JANINA</p>
-                        <p class="subtitulo"> Arroz arbóreo, cogumelo shitake e shimeji salteados no azeite e ervas gregas finalizado com queijo brie.</p>
-                    </div>
-                    <div class="--preco-button">
-                        <p class="titulo">R$ 71,90</p>
-                        <button class="btn">Adicionar a sacola</button>
-                        <button class="btn" onclick="adicionarAoCarrinho('RISOTO JANINA', 71.90)">Adicionar a sacola</button>
-                    </div>
-                    </div>
-                </div>
-            </div>
-            <!--TERCEIRA LINHA DE CARD-->
-            <div class="card-position">
-                <div class="card">
-                    <img src="image/comidas/almoco/fetuccine.png" alt="">
-                    <div class="--linha">
-                    <div class="--text">
-                        <p class="titulo">FETTUCINE ARGOS</p>
-                        <p class="subtitulo"> Massa italiana fettuccine ao molho vermelho com ragu de brisket.</p>
-                    </div>
-                    <div class="--preco-button">
-                        <p class="titulo">R$ 49,90</p>
-                        <button class="btn">Adicionar a sacola</button>
-                        <button class="btn" onclick="adicionarAoCarrinho('FETTUCINE ARGOS', 49.90)">Adicionar a sacola</button>
-                    </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="image/comidas/almoco/souvlaki.png" alt="">
-
-                    <div class="--linha">
-                    <div class="--text">
-                        <p class="titulo">SOUVLAKI</p>
-                        <p class="subtitulo">Espeto grelhado temperado com especiarias gregas. Servido com salada crocante, tzatziki, fritas e pita. </p>
-                    </div>
-                    <div class="--preco-button">
-                        <p class="titulo">R$ 62,90</p>
-                        <button class="btn">Adicionar a sacola</button>
-                        <button class="btn" onclick="adicionarAoCarrinho('SOUVLAKI', 62.90)">Adicionar a sacola</button>
-                    </div>
-                    </div>
-                </div>
+            <h2 class="subtitulo">Almoço</h1>   
+                
+                <div class="card-position" id="card-position">
             </div>
         </header>
 
@@ -159,4 +65,5 @@
         alert(`${nome} foi adicionado ao carrinho!`);
     }
     </script>
+    <script src="./js/almoco.js"></script>
 </html>

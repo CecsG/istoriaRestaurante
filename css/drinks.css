@@ -78,12 +78,21 @@ header h2.subtitulo{/* SUBTITULO */
 
 }
 
-div.card-position{/* SEPARAÇÃO DOS CARDS */
+/* div.card-position{/* SEPARAÇÃO DOS CARDS
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    grid-column;
     gap: 10px;
     margin-bottom: 30px;
     justify-content: space-between;
+} */
+
+div .card-position{/* SEPARAÇÃO DOS CARDS */
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 30px;
 }
 
 div.card{/* AQUI PODE AJUSTAR O TAMANHO DOS CARDS */
@@ -177,13 +186,22 @@ a{
     .lateral{
         display: none;
     }
-    div.card-position{/* SEPARAÇÃO DOS CARDS */
+    /* div.card-position{/* SEPARAÇÃO DOS CARDS
         display: flex;
         flex-direction: row;
         gap: 8px;
         margin-bottom: 20px;
         
+    } */
+
+    div .card-position{/* SEPARAÇÃO DOS CARDS */
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        margin-bottom: 30px;
     }
+    
     div.card{/* AQUI PODE AJUSTAR O TAMANHO DOS CARDS */
         background-color: #A37B58;
         width: 350px;
@@ -296,7 +314,7 @@ a{
     }
     div.card{/* AQUI PODE AJUSTAR O TAMANHO DOS CARDS */
         background-color: #A37B58;
-        width: 280px;
+        width: 286px;
         height: 169px;
         border-radius: 10px;
         display: flex;
@@ -330,7 +348,7 @@ a{
         width: 15rem;
         margin-left: 4.6rem;
         margin-top: -4rem;
-        font-size: 20px; 
+        font-size: 18px; 
         color: white;
     }
     
@@ -362,7 +380,6 @@ a{
         border-radius: 10px;
         font-size: 12px;
     }
-   
     header div.--inicio{/* lINHAS E O TITULO */
         display: flex;
         justify-content: space-between;
