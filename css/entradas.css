@@ -194,6 +194,7 @@ a{
         
     } */
 
+
     div .card-position{/* SEPARAÇÃO DOS CARDS */
         display: grid;
         grid-template-rows: repeat(1, 1fr);
@@ -204,7 +205,7 @@ a{
     
     div.card{/* AQUI PODE AJUSTAR O TAMANHO DOS CARDS */
         background-color: #A37B58;
-        width: 350px;
+        width: 420px;
         height: 169px;
         border-radius: 10px;
         display: flex;
@@ -214,7 +215,7 @@ a{
         
     }
     div.card img{/* IMAGEM DENTRO DO CARD */
-    width: 80px;
+    width: 100px;
     height: 100px;
     margin: 30px 8px;
     
@@ -241,7 +242,7 @@ a{
     }
     
     div.--text p.subtitulo{ /*DESCRIÇÃO DO PRODUTO*/
-        width: 15rem;
+        width: 17rem;
         height: 4.5rem;
         font-size: 16px; 
         margin-top: 1rem;
@@ -263,7 +264,7 @@ a{
         margin-top: 7.8rem;
         margin-left: -18.2rem;
         position: absolute;
-        width: 120px;
+        width: 160px;
         height: 23px;
         border-radius: 10px;
         font-size: 14px;
@@ -375,7 +376,7 @@ a{
         margin-top: 3rem;
         margin-left: -10rem;
         position: absolute;
-        width: 100px;
+        width: 120px;
         height: 20px;
         border-radius: 10px;
         font-size: 12px;

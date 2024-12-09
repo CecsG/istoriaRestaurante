@@ -32,3 +32,49 @@ button {
     box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
     transform: translateY(-2px);
    }
+   
+   @media(max-width:768px){
+    button {
+        display: flex;
+        height: 3em;
+        width: 100px;
+        align-items: center;
+        justify-content: center;
+        background-color: #eeeeee4b;
+        border-radius: 3px;
+        letter-spacing: 1px;
+        transition: all 0.2s linear;
+        cursor: pointer;
+        border: none;
+        background: #fff;
+        margin-left:80px ;
+        margin-top: 100px;
+        
+       }
+
+   }
+   @media(max-width:475px){
+    button {
+        display: flex;
+        height: 20px;
+        width: 45px;
+        align-items: center;
+        justify-content: center;
+        background-color: #eeeeee4b;
+        border-radius: 3px;
+        letter-spacing: 1px;
+        transition: all 0.2s linear;
+        cursor: pointer;
+        border: none;
+        background: #fff;
+        margin-left:20px ;
+        margin-top: 100px;
+        position: fixed;
+       }
+       button > svg {
+        margin-right: 5px;
+        margin-left: 5px;
+        font-size: 5px;
+        transition: all 0.4s ease-in;
+       }
+   }

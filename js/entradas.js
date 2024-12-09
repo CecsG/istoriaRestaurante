@@ -59,7 +59,8 @@ function pesquisaCardapio(){
             '</div>'+
             '<div class="--preco-button">'+
                 '<p class="titulo">R$'+preco+'</p>'+
-                '<a href="teste.html"><button class="btn">Adicionar a sacola </button></a>'+
+                // '<a href="carrinho.html"><button class="btn">Adicionar a sacola </button></a>'+
+                '<button class="btn">Adicionar a sacola </button>'+
                 '<button class="btn" onclick="adicionarAoCarrinho('+prato+', '+preco+')">Adicionar a sacola</button>'+
             '</div>'+
             '</div>'+
